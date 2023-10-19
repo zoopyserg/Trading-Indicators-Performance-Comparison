@@ -1,24 +1,26 @@
-# Trading Indicators 
-(performed in Ruby, Python, and C)
+# Trading Indicators Library 
+(Implemented in Ruby, Python, and C)
 
-Here, I calculate:
+This repository contains a collection of trading indicator calculations, demonstrating the efficiency and effectiveness of various programming languages in processing financial data. The indicators covered include:
+
 - Stochastic Oscillator
-- RSI
-- KST
+- Relative Strength Index (RSI)
+- Know Sure Thing (KST)
 - Chaikin Oscillator
-- MACD
+- Moving Average Convergence Divergence (MACD)
 - Bollinger Bands
-- EMA
-- SMA
+- Exponential Moving Average (EMA)
+- Simple Moving Average (SMA)
 
-Some benchmarks (on 1-week worth of data):
-- Ruby version takes roughly 2 hours.
-- Python version - roughly 2 minutes.
-- C version - roughly 2 seconds.
+## Performance Benchmarks
+The performance of each implementation was benchmarked on a dataset spanning one week. The results are as follows:
 
-This is a part of a real project.
+- Ruby implementation: ~2 hours
+- Python implementation: ~2 minutes
+- C implementation: ~2 seconds
 
-I extracted this code into a separate repo for demo purposes.
+## Project Context
+This library is a subset of a larger project, extracted and organized into a separate repository for demonstration and benchmarking purposes.
 
 # Copyright
 
