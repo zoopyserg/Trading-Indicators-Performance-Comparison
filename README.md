@@ -1,4 +1,4 @@
-# Trading Indicators Library 
+# Trading Indicators Library
 (Implemented in Ruby, Python, and C)
 
 This repository contains a collection of trading indicator calculations, demonstrating the efficiency and effectiveness of various programming languages in processing financial data. The indicators covered include:
@@ -18,6 +18,40 @@ The performance of each implementation was benchmarked on a dataset spanning one
 - Ruby implementation: ~2 hours
 - Python implementation: ~2 minutes
 - C implementation: ~2 seconds
+
+## Benchmark Methodology
+
+The performance benchmarks were conducted to compare the execution time of the trading indicators calculations across different programming languages. The methodology employed is straightforward and aimed at providing a relative performance comparison rather than an absolute measurement of efficiency. Here are the steps followed:
+
+1. **Environment Setup**:
+    - The benchmarks were conducted on a machine with AMD Ryzen 5950X CPU and 120Gb of RAM.
+    - The dataset used for the benchmarks spans one week of trading data.
+
+2. **Benchmark Execution**:
+    - The `time` command available in Linux was used to measure the execution time of each implementation.
+    - Each implementation was executed using the following pattern:
+        - For C:
+            ```bash
+            time ./c/indicators_recalculator <table_name>
+            ```
+        - For Python:
+            ```bash
+            time python3 python/indicators_recalculator.py <table_name>
+            ```
+        - For Ruby:
+            ```bash
+            time ruby ruby/indicators_recalculator.rb <table_name>
+            ```
+
+3. **Performance Measurement**:
+    - The real time (wall-clock time) reported by the `time` command was used as the performance metric.
+    - The benchmarks were executed multiple times to ensure consistency in the results, and the average execution time was recorded.
+
+4. **Limitations**:
+    - The benchmarks provide a relative comparison of performance but do not account for other factors such as code optimization, system load, or external system interactions that might affect the execution time.
+    - The Ruby implementation is legacy and was not updated or optimized for this benchmark.
+
+By documenting the methodology, it aims to provide a clear understanding of the benchmark process, enabling an informed interpretation of the results.
 
 ## Project Context
 This library is a subset of a larger project, extracted and organized into a separate repository for demonstration and benchmarking purposes.
@@ -53,6 +87,10 @@ This project contains implementations of trading indicators in C, Python, and Ru
 
 ## Database Setup
 This project assumes the existence of a specific database schema. The repository does not currently include migration scripts to create the necessary database tables and columns. If needed, you may need to create these manually based on the code's expectations.
+
+## Contact Information
+
+For more information about this project, or to get in touch, please visit my [LinkedIn profile](https://www.linkedin.com/in/serge-vinogradoff/).
 
 
 # Copyright
